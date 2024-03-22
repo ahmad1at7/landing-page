@@ -1,0 +1,335 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ojuju:wght@200..800&family=Roboto&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Navbar */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    height: 132px;
+}
+
+/* Logo and location styles */
+.logo-div img {
+    width: 30px;
+}
+
+.location-div img {
+    width: 12px;
+    margin: 0px 10px;
+}
+
+.location-div span {
+    color: #0391D3;
+}
+
+/* Watch and phone styles */
+.watch-div img,
+.phone-div img {
+    width: 20px;
+}
+
+/* Request call button */
+.request-call {
+    background-color: #0391D3;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+/* Media Queries for navbar */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .watch-div,
+    .phone-div,
+    .request-call {
+        margin-top: 10px;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Group 1 styles */
+.group-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-1 h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.group-1 h1 b {
+    color: #0391D3;
+    font-weight: bolder;
+}
+
+/* Button styles */
+.group-1 .button {
+    background-color: #009ae1;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 20px 60px;
+    font-weight: 900;
+    margin: 40px;
+}
+
+/* Group 1 bottom styles */
+.group-1-bottom {
+    margin: 40px;
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #515151;
+}
+
+/* Group 2 styles */
+.group-2 {
+    position: relative;
+    border-radius: 650px 0px 0px 0px;
+    background-color: #0391D3;
+}
+
+.group-2 img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+/* Media Queries for Hero section */
+@media screen and (max-width: 900px) {
+    .hero-section {
+        margin: 50px 0px;
+        grid-template-columns: 1fr;
+        overflow: visible;
+    }
+}
+
+/* Household Appliances */
+.Household-Appliances {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.household-head {
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 40px 0px;
+    color: #2E2E2E;
+}
+
+.household {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10rem;
+    max-width: 100%;
+}
+
+.household > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.household img {
+    width: 90%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.household > div:first-child {
+    box-shadow: 2px 2px 40px #6b6b6b25;
+    height: 80vh;
+}
+
+/* Media Queries for Household Appliances */
+@media screen and (max-width: 900px) {
+    .Household-Appliances {
+        margin-top: 25rem;
+    }
+    .household-head {
+        font-size: 20px;
+        text-align: center;
+    }
+    .household {
+        display: flex;
+        flex-direction: column;
+    }
+    .household img {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+/* Order Visit */
+.order-visit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+    height: 50vh;
+    background-color: #3CA7DB;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Left content styles */
+.left-content {
+    margin: 50px;
+    justify-content: space-between;
+    color: white;
+}
+
+.left-content h1 {
+    margin: 20px 0px;
+    font-size: 26px;
+}
+
+.left-content p {
+    color: #D3E8E0;
+    margin: 20px 0px;
+    font-size: 10px;
+}
+
+.left-content button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+/* Right content styles */
+.right img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+/* Media Queries for Order visit */
+@media screen and (max-width: 900px) {
+    .order-visit {
+        width: 100%;
+        height: 30vh;
+    }
+    .left-content h1 {
+        font-size: 12px;
+    }
+    .left-content p {
+        font-size: 10px;
+    }
+}
+
+/* Services */
+.services {
+    height: fit-content;
+    background-color: #3CA7DB;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+/* Service heading styles */
+.serices-heading {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+}
+
+.serices-heading span {
+    color: red;
+}
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 6rem;
+}
+
+/* Individual card styles */
+.card {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3CA7DB;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777777;
+}
+
+/* Media Queries for Services */
+@media screen and (max-width: 900px) {
+    .services {
+        width: 100%;
+    }
+    .serices-heading {
+        font-size: 20px;
+    }
+    .card-container {
+        margin: 0px 1rem;
+    }
+}
